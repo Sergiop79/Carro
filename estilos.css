@@ -53,13 +53,13 @@ nav ul li a
 	margin: 0 1em 0 0;
 	padding: 0.5em 1em;
 	text-decoration: none;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 }
 nav ul li a:hover
 {
 	background: white;
 	color: black;
-	transform: scale(1.2) rotate(-365deg);
+	transform: scale(1.2) rotate(10deg);
 }
 
 #cochecito

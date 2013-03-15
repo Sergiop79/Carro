@@ -3,6 +3,7 @@ function inicio ()
 {
 	//Aqui va todo el codigo relacionado con DOM
 	$("#personalizar").on("click", movida);
+	
 }
 function movida () 
 {
