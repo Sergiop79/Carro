@@ -92,8 +92,19 @@ nav ul li a:hover
 	padding: 1em;
 	text-align: justify;
 	text-shadow: rgba(0,0,0,0.7) 2px 2px 5px;
-	transition: all 1s ease;
+	transition: all 1.5s ease;
 	width: 40%;
+}
+#nombre
+{
+	border-radius: 0.5em;
+	display: none;
+	padding: 6px 2px;
+	text-align: center;
+}
+#nombre:focus
+{
+	box-shadow: 0 0 0.2em blue inset;
 }
 #personalizacion
 {
@@ -106,7 +117,7 @@ nav ul li a:hover
 	opacity: 0;
 	overflow: hidden;
 	padding: 1em 1em 0;
-	transition: all 1s ease;
+	transition: all 1.5s ease;
 	vertical-align: top;
 	width: 0;
 }
@@ -136,7 +147,7 @@ nav ul li a:hover
 }
 #personalizacion #color div:hover
 {
-	border: 4px solid black;
+	border: 2px solid black;
 	opacity: 1;
 	transform: scale(1.1);
 }

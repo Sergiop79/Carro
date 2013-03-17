@@ -1,11 +1,11 @@
 $(document).on("ready", inicio);
-function inicio () 
+function inicio ()
 {
 	//Aqui va todo el codigo relacionado con DOM
 	$("#personalizar").on("click", movida);
-	
+	$('#ponnombre').on('click', ponleNombre);
 }
-function movida () 
+function movida ()
 {
 	//JSON
 	var cambiosCSS =
@@ -21,13 +21,22 @@ function movida ()
 		opacity: 1,
 		width: "40%"
 	};
+
 	$("#historia").css(cambiosCSS);
 	$("#personalizacion").css(cambiosPersonalizacion);
 	$("#color div").on("click", cambiarColor);
 }
-function cambiarColor (datos) 
+function cambiarColor (datos)
 {
 	var colorito = datos.currentTarget.id;
 	var nuevoCoche = "c" + colorito + ".jpg";
 	$("#cochecito img").attr("src", nuevoCoche);
+}
+function ponleNombre(){
+	$('#nombre').toggle(300);
+	$('#nombre').on('keyup', function()	{
+		var $texto = $(this).val();
+		$('h1').html($texto);
+		$('figcaption h2').html($texto);
+	});
 }
