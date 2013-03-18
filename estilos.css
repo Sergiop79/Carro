@@ -1,4 +1,4 @@
-body 
+body
 {
 	background: #222;
 	color: #EEE;
@@ -8,7 +8,7 @@ body
 }
 header
 {
-	background: url("logo.png") no-repeat 98% center, 
+	background: url("logo.png") no-repeat 98% center,
 				url("fondo.png");
 	background-size: 90px, 100px 100px;
 	box-shadow: rgba(0,0,0,0.7) 0px 5px 10px;
@@ -40,22 +40,18 @@ nav ul
 {
 	list-style: none;
 }
+
 nav ul li
-{
-	display: inline-block;
-}
-nav ul li a
 {
 	background: #D23D15;
 	border-radius: 0.5em;
-	color: white;
+	cursor: pointer;
 	display: inline-block;
 	margin: 0 1em 0 0;
 	padding: 0.5em 1em;
-	text-decoration: none;
 	transition: all 0.5s ease;
 }
-nav ul li a:hover
+nav ul li:hover
 {
 	background: white;
 	color: black;
@@ -82,6 +78,27 @@ nav ul li a:hover
 	display: inline-block;
 	vertical-align: top;
 }
+#cerrarcontacto
+{
+	cursor: pointer;
+	position: absolute;
+	right: 2%;
+	top: 2%;
+}
+
+#formnombre
+{
+	background-color:rgba(0,0,0,0.9);
+	border: solid 1px;
+	border-radius: 5px;
+	display: none;
+	left:27%;
+	top:20%;
+	margin: 0;
+	padding: 10% 10%;
+	position: absolute;
+	z-index: 3;
+}
 #historia
 {
 	background: rgba(0,0,0,0.6);
@@ -95,16 +112,26 @@ nav ul li a:hover
 	transition: all 1.5s ease;
 	width: 40%;
 }
+#informacion
+{
+	display: none;
+	transition: all 0.5s ease;
+}
+#informacion:hover
+{
+	transform: scale(1.2) rotate(10deg);
+}
 #nombre
 {
 	border-radius: 0.5em;
-	display: none;
+	display: inline-block;
+	outline: none;
 	padding: 6px 2px;
 	text-align: center;
 }
 #nombre:focus
 {
-	box-shadow: 0 0 0.2em blue inset;
+	box-shadow: -1px 1px 0.8em blue inset;
 }
 #personalizacion
 {
@@ -196,4 +223,26 @@ nav ul li a:hover
 {
 	transition: all 1s ease;
 	max-width: 100%;
+}
+#textocontacto{
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 0.6em;
+	border: solid white 1px;
+	box-shadow: rgba(200,200,200,0.5) 3px 4px 1em;
+	display:none;
+	left: 30%;
+	top: 30%;
+	padding: 1em 2em;
+	position: absolute;
+	width: 40%;
+	z-index: 2;
+}
+#textocontacto img
+{
+	border: 2px solid white;
+	border-radius: 0.8em;
+	margin-right: 1em;
+	width: 9%;
+	display: inline-block;
+	vertical-align: middle;
 }
