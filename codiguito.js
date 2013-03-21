@@ -8,6 +8,11 @@ function inicio ()
 	$('#cerrarcontacto').on('click', function(){
 		$('#textocontacto').fadeOut('slow');
 	});
+	$('#cerrarnombre').on('click', function()	{
+		$('#formnombre').fadeOut('slow');
+	});
+	$('#cierraperso').on('click', movida2);
+
 }
 function movida ()
 {
@@ -29,7 +34,10 @@ function movida ()
 	$("#historia").css(cambiosCSS);
 	$("#personalizacion").css(cambiosPersonalizacion);
 	$("#color div").on("click", cambiarColor);
+	$('#formnombre').fadeOut('slow');
+	$('#textocontacto').fadeOut('slow');
 }
+
 function cambiarColor (datos)
 {
 	var colorito = datos.currentTarget.id;
@@ -51,3 +59,25 @@ function contactar(){
 	$('#textocontacto').slideToggle('fast');
 	$('#formnombre').hide();
 }
+function movida2(){
+	var cambiosCSS =
+	{
+		height: 0,
+		opacity:0, 
+		overflow: "hidden",
+		width: 0
+	};
+	var cambiosHistoria =
+	{
+		height: $("#cochecito").height(),
+		margin: '0 2% 7em 1em',
+		overflow: "visible",
+		padding: '1em',
+		width: '40%'
+	}
+
+	$('#personalizacion').css(cambiosCSS);
+	$('#historia').css(cambiosHistoria);
+};
+
+
